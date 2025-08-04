@@ -1,18 +1,104 @@
-/* Layout with Flexbox */
+/* Flexbox layout preserved */
 main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-/* Ensure article takes more space */
 article {
   flex: 2;
+  background-color: #fdf8f3;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Ensure aside takes less space */
 aside {
   flex: 1;
+  background-color: #eef5f8;
+  padding: 20px;
+  border-left: 3px solid #ccc;
 }
 
-/* Optional: tweak padding or margin if needed */
+/* Styling header and logo */
+header {
+  background-color: #111;
+  padding: 15px 0;
+  color: white;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+}
+
+header li {
+  margin-right: 20px;
+}
+
+header li.logo {
+  font-size: 40px;
+  color: #ff6f61;
+}
+
+header a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Styling content in article */
+article h1, article h2, article h3 {
+  color: #2b2b2b;
+}
+
+article p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+article img {
+  margin-top: 20px;
+  border: 3px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Table styling */
+article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+article th, article td {
+  border: 1px solid #aaa;
+  padding: 10px;
+  text-align: left;
+}
+
+article th {
+  background-color: #f0f0f0;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+  margin-top: 30px;
+}
+
+footer a {
+  color: #ff6f61;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
