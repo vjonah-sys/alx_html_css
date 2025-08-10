@@ -1,104 +1,42 @@
-/* Flexbox layout preserved */
-main {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+/* ----- Logo Pulse Animation ----- */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
 }
 
-article {
-  flex: 2;
-  background-color: #fdf8f3;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-}
-
-aside {
-  flex: 1;
-  background-color: #eef5f8;
-  padding: 20px;
-  border-left: 3px solid #ccc;
-}
-
-/* Styling header and logo */
-header {
-  background-color: #111;
-  padding: 15px 0;
-  color: white;
-}
-
-header ul {
-  display: flex;
-  align-items: center;
-}
-
-header li {
-  margin-right: 20px;
-}
-
-header li.logo {
-  font-size: 40px;
-  color: #ff6f61;
-}
-
-header a {
-  color: white;
+.logo {
+  animation: pulse 2s infinite ease-in-out;
+  font-size: 36px;
   font-weight: bold;
-  text-decoration: none;
 }
 
-header a:hover {
-  text-decoration: underline;
+/* ----- Typing Text Effect ----- */
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid;
+  width: 0;
+  animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
 }
 
-/* Styling content in article */
-article h1, article h2, article h3 {
-  color: #2b2b2b;
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
 }
 
-article p {
-  font-size: 16px;
-  color: #444;
-  margin-bottom: 10px;
+@keyframes blink {
+  50% { border-color: transparent; }
 }
 
-article img {
-  margin-top: 20px;
-  border: 3px solid #ccc;
-  border-radius: 5px;
+/* ----- Table Row Hover Highlight ----- */
+article table tr {
+  transition: background-color 0.3s ease;
 }
 
-/* Table styling */
-article table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 20px;
-}
-
-article th, article td {
-  border: 1px solid #aaa;
-  padding: 10px;
-  text-align: left;
-}
-
-article th {
-  background-color: #f0f0f0;
-}
-
-/* Footer */
-footer {
-  background-color: #111;
-  color: white;
-  text-align: center;
-  padding: 15px 10px;
-  margin-top: 30px;
-}
-
-footer a {
-  color: #ff6f61;
-  text-decoration: none;
-}
-
-footer a:hover {
-  text-decoration: underline;
+article table tr:hover {
+  background-color: #f3f3f3;
 }
