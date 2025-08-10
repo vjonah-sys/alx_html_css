@@ -214,3 +214,66 @@ body {
 .contact .btn:hover {
     background-color: #e85a2f;
 }
+/* Copy all from 3-styles.css above this line */
+
+/* FOOTER */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.footer .footer-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer .social-icons a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+    color: var(--primary-color);
+}
+
+.footer p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+/* Pentagon Shape */
+.pentagon {
+    position: relative;
+    width: 100px;
+    height: 0;
+    border-style: solid;
+    border-width: 0 50px 35px 50px;
+    border-color: transparent transparent #FF6565 transparent;
+    margin: 0 auto 1rem auto;
+}
+
+.pentagon:after {
+    content: "";
+    position: absolute;
+    top: 35px;
+    left: -50px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 65px 100px 0 100px;
+    border-color: #FF6565 transparent transparent transparent;
+}
+
+.pentagon span {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+}
