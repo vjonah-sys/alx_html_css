@@ -1,0 +1,44 @@
+/* Our Results Section */
+.our-results {
+  background-color: #000;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat {
+  background-color: #111;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.stat .number {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.stat .label {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Responsive for Our Results */
+@media (max-width: 768px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .stats {
+    grid-template-columns: 1fr;
+  }
+}
